@@ -36,14 +36,20 @@ html[xmlns] .clearfix {
       li{
         list-style: none;
       }
+      p{
+        margin:0;
+      }
 
       .wrapper{
         width:100%;
+        margin:0 auto;
+         background:gray;
       }
       .cover{
-        background:gray;
-        width:100%;
+       
+        width:90%;
         min-height: 400px;
+        margin:0 auto;
       }
 
       .content{
@@ -62,49 +68,78 @@ html[xmlns] .clearfix {
         margin: 40px auto;
         padding: 0;
         width:1020px;
+      }
 
-
+      ul.skill{
+        width:100%;
+        text-align: center;
       }
   
-      li.skill{
-        background:red;
+      ul.skill li{
+        border:30px solid white;
         border-radius: 50%;
-        box-shadow: 0px  0px 50px white;
+        box-shadow: 0px  0px 50px black;
         margin-right: 2px;
-        float:left;
+       display: inline-block;
         position: relative;
+        vertical-align: top;
         width:200px;
         height:200px;
          -webkit-transition: all .5s ease-in-out;
       }
 
-      li.skill{
-        
-      
-      }
-
-      li.skill:hover{
+      ul.skill li:hover{
         overflow:hidden;
         z-index:1;
-        -webkit-transform: scale(1.5); 
+        -webkit-transform: scale(1.1); 
+        box-shadow: 0px  0px 50px white;
+        border: 20px dotted red;
+       /* border: 10px solid red;*/
       }
+
+      ul.skill li:hover h2.ba{
+   /*     background: url(images/magglassrotatewhite.svg) center no-repeat;*/
+          -webkit-transform: scale(1.2); 
+
+       }
+
+
+
+      ul.skill li:hover h3.ba{
+        
+
+      }
+
+
+      .skill h2{
+       border-radius: 50%;
+       width: 80px;
+       height:80px;
+       padding:0px;
+       position: absolute;
       
+      }
+
+      .skill h3{
+        padding: 100px 20px;
+        font-size: 12px;
+        text-align: center;
+        color:white;
+    }
 
       h2.ba{   
-       font-size: 16px;
-       text-align: center;
-       color:blue;
-       padding:0;
-       border-radius: 50%;
-       border:1px solid black;
-
-       position: relative;
-        top:60px;
-
+       background: url(images/magglasswhite.svg) center no-repeat;
+       top:10px;
+       left:40px;
       }
 
-      li.skill:hover{
-      
+    
+      h2.pm{
+        
+      }
+
+      h3.pm{
+
       }
 
       /* Then we use media queries for targeting other resolutions */
