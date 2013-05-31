@@ -31,29 +31,47 @@ html[xmlns] .clearfix {
       /* First we do all of our regular CSS for the basics and desktop site */
       body {
         border:solid 3px purple;
+  
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.2em;
+      }
+
+      h1{
+            font-family: 'Fjord One', serif;
+            margin:0;
+            font-size:72px;
+            color:white;
       }
 
       li{
         list-style: none;
       }
       p{
+
         margin:0;
+      }
+
+     
+      span.tagLine{
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+
       }
 
       .wrapper{
         width:100%;
         margin:0 auto;
-         background:gray;
+        background:rgb(198, 238, 226);
       }
       .cover{
-       
         width:90%;
         min-height: 400px;
         margin:0 auto;
       }
 
       .content{
-        background:yellow;
+        background:rgb(227, 248, 242);
         border: 1px solid black;
         width:100%;
         min-height: 400px;
@@ -71,16 +89,18 @@ html[xmlns] .clearfix {
       }
 
       ul.skill{
+        margin: 0 auto;
+        padding-top: 100px;
         width:100%;
         text-align: center;
       }
   
       ul.skill li{
-        border:30px solid white;
+        border:30px solid rgb(132, 213, 214);
         border-radius: 50%;
-        box-shadow: 0px  0px 50px black;
+        box-shadow: 0px  0px 50px white;
         margin-right: 2px;
-       display: inline-block;
+        display: inline-block;
         position: relative;
         vertical-align: top;
         width:200px;
@@ -93,7 +113,7 @@ html[xmlns] .clearfix {
         z-index:1;
         -webkit-transform: scale(1.1); 
         box-shadow: 0px  0px 50px white;
-        border: 20px dotted red;
+        border: 20px dotted rgb(132, 213, 214);
        /* border: 10px solid red;*/
       }
 
@@ -127,20 +147,80 @@ html[xmlns] .clearfix {
         color:white;
     }
 
-      h2.ba{   
+      h2.vision{   
        background: url(images/magglasswhite.svg) center no-repeat;
        top:10px;
        left:40px;
       }
 
     
-      h2.pm{
+      h2.strategy{
         
       }
 
-      h3.pm{
+      h3.strategy{
 
       }
+
+      .card{
+        width:40%;
+ 
+         background:rgb(132, 214, 195);
+        border-radius: 3px;
+
+        padding:20px;
+        margin:20px;
+        float:left;
+
+      }
+
+      .card .top{
+        background: url(images/videocam.svg) center no-repeat;
+        background-size: cover;
+        min-height: 300px;
+        margin:-20px;
+        position: relative;
+      }
+
+      .card .middle{
+        margin-top:50px;
+      } 
+
+      h2.problem{
+        font-size: 48px;
+        line-height: 1.2em;
+        color:rgb(132, 214, 195);
+        text-shadow: 2px 2px rgb(227, 248, 242);
+        font-family: 'Fjord One', serif;
+        width: 40%;
+        float:left;
+        text-align: center;
+
+
+      }
+      .uppercase{
+        text-transform: uppercase;
+      }
+
+
+      span.role{
+        position: absolute;
+        color: #000;
+        bottom: -10px;
+        left: -10px;
+        background: white;
+        padding: 0px 33px 0px 33px;
+        text-transform: uppercase;
+        height: 20px;
+        font-size: 10px;
+      }
+
+      .fast{
+        color:rgb(132, 214, 195);
+     
+        font-size: 72px;
+      }
+
 
       /* Then we use media queries for targeting other resolutions */
 
