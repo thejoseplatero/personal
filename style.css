@@ -75,7 +75,7 @@ html[xmlns] .clearfix {
          color:rgb(227, 248, 242);
         width:100%;
         min-height: 400px;
-
+    
       }
       
       .centered{
@@ -162,25 +162,25 @@ html[xmlns] .clearfix {
       .card{
         width:40%;
  
-         background:rgb(132, 214, 195);
+    /*     background:rgb(132, 214, 195);*/
         border-radius: 3px;
-
         padding:20px;
         margin:20px;
         float:left;
+        color:rgb(132, 214, 195);
 
       }
 
       .card .top{
         background: url(images/videocam.svg) center no-repeat;
         background-size: cover;
-        min-height: 300px;
-        margin:-20px;
+        min-height: 400px;
+/*        margin:-20px;*/
         position: relative;
       }
 
       .card .middle{
-        margin-top:50px;
+        margin-top:-40px;
       } 
 
       h2.problem{
@@ -202,9 +202,9 @@ html[xmlns] .clearfix {
       span.role{
         position: absolute;
         color: #000;
-        bottom: -10px;
+        bottom: 40px;
         left: -10px;
-        background: yellow;
+        background:rgb(132, 214, 195);
         padding: 0px 33px 0px 33px;
         text-transform: uppercase;
         height: 20px;
