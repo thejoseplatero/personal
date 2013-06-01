@@ -31,33 +31,33 @@ html[xmlns] .clearfix {
       /* First we do all of our regular CSS for the basics and desktop site */
       body {
         border:solid 3px purple;
-  
         font-family: 'Raleway', sans-serif;
         line-height: 1.2em;
+
       }
 
       h1{
-            font-family: 'Fjord One', serif;
             margin:0;
             font-size:72px;
-            color:white;
+      }
+
+      h2{
+   
       }
 
       li{
         list-style: none;
       }
       p{
-
+     
         margin:0;
       }
 
-     
-      span.tagLine{
-
-        font-family: 'Raleway', sans-serif;
-        font-size: 12px;
-
+      .number{
+        color:red;
       }
+
+
 
       .wrapper{
         width:100%;
@@ -72,7 +72,7 @@ html[xmlns] .clearfix {
 
       .content{
         background:rgb(227, 248, 242);
-        border: 1px solid black;
+         color:rgb(227, 248, 242);
         width:100%;
         min-height: 400px;
 
@@ -93,6 +93,7 @@ html[xmlns] .clearfix {
         padding-top: 100px;
         width:100%;
         text-align: center;
+
       }
   
       ul.skill li{
@@ -106,6 +107,7 @@ html[xmlns] .clearfix {
         width:200px;
         height:200px;
          -webkit-transition: all .5s ease-in-out;
+
       }
 
       ul.skill li:hover{
@@ -117,18 +119,18 @@ html[xmlns] .clearfix {
        /* border: 10px solid red;*/
       }
 
-      ul.skill li:hover h2.ba{
-   /*     background: url(images/magglassrotatewhite.svg) center no-repeat;*/
+  /*    ul.skill li:hover h2.ba{
+        background: url(images/magglassrotatewhite.svg) center no-repeat;
           -webkit-transform: scale(1.2); 
 
        }
 
+*/
 
-
-      ul.skill li:hover h3.ba{
+/*      ul.skill li:hover h3.ba{
         
 
-      }
+      }*/
 
 
       .skill h2{
@@ -141,26 +143,21 @@ html[xmlns] .clearfix {
       }
 
       .skill h3{
-        padding: 100px 20px;
-        font-size: 12px;
+        padding: 40px 20px;
+        font-size: 20px;
+        font-weight: bold;
         text-align: center;
-        color:white;
-    }
+        color:rgb(132, 214, 195);
+        }
 
-      h2.vision{   
-       background: url(images/magglasswhite.svg) center no-repeat;
+      .skill h2{   
+    /*   background: url(images/magglasswhite.svg) center no-repeat;*/
        top:10px;
        left:40px;
       }
 
     
-      h2.strategy{
-        
-      }
-
-      h3.strategy{
-
-      }
+   
 
       .card{
         width:40%;
@@ -191,13 +188,12 @@ html[xmlns] .clearfix {
         line-height: 1.2em;
         color:rgb(132, 214, 195);
         text-shadow: 2px 2px rgb(227, 248, 242);
-        font-family: 'Fjord One', serif;
         width: 40%;
         float:left;
         text-align: center;
-
-
+        font-family: 'Open Sans', sans-serif;
       }
+
       .uppercase{
         text-transform: uppercase;
       }
@@ -208,7 +204,7 @@ html[xmlns] .clearfix {
         color: #000;
         bottom: -10px;
         left: -10px;
-        background: white;
+        background: yellow;
         padding: 0px 33px 0px 33px;
         text-transform: uppercase;
         height: 20px;
@@ -217,7 +213,6 @@ html[xmlns] .clearfix {
 
       .fast{
         color:rgb(132, 214, 195);
-     
         font-size: 72px;
       }
 
