@@ -33,23 +33,26 @@ html[xmlns] .clearfix {
         border:solid 3px purple;
         font-family: 'Raleway', sans-serif;
         line-height: 1.2em;
+        color:white;
 
       }
 
       h1{
-            margin:0;
+            margin:0 auto;
             font-size:72px;
+            padding:100px;
+            text-align: center;
       }
 
       h2{
-   
+        color:white;
       }
 
       li{
         list-style: none;
       }
       p{
-     
+      
         margin:0;
       }
 
@@ -62,20 +65,28 @@ html[xmlns] .clearfix {
       .wrapper{
         width:100%;
         margin:0 auto;
-        background:rgb(198, 238, 226);
+   /*     background:rgb(198, 238, 226);*/
+         background-image:url(images/green_dust_scratch.png);
       }
-      .cover{
-        width:90%;
-        min-height: 400px;
-        margin:0 auto;
+
+      .header{
+        min-height: 200px;
+        width:100%;
+       
+
       }
 
       .content{
         background:rgb(227, 248, 242);
-         color:rgb(227, 248, 242);
+        color:rgb(227, 248, 242);
         width:100%;
         min-height: 400px;
-    
+      }
+
+      .content h2{
+        text-align: center;
+        padding:100px;
+        line-height: 1.2em;
       }
       
       .centered{
@@ -88,29 +99,33 @@ html[xmlns] .clearfix {
         width:1020px;
       }
 
-      ul.skill{
-        margin: 0 auto;
-        padding-top: 100px;
+      ul.circle{
+        margin: -50px auto;
+        position: relative;
+        top:0px;
         width:100%;
         text-align: center;
 
+
+
       }
   
-      ul.skill li{
-        border:30px solid rgb(132, 213, 214);
+      ul.circle li{
+        border:10px solid rgb(132, 213, 214);
+         background:rgb(198, 238, 226);
         border-radius: 50%;
         box-shadow: 0px  0px 50px white;
         margin-right: 2px;
         display: inline-block;
         position: relative;
         vertical-align: top;
-        width:200px;
-        height:200px;
+        width:100px;
+        height:100px;
          -webkit-transition: all .5s ease-in-out;
 
       }
 
-      ul.skill li:hover{
+      ul.circle li:hover{
         overflow:hidden;
         z-index:1;
         -webkit-transform: scale(1.1); 
@@ -119,21 +134,15 @@ html[xmlns] .clearfix {
        /* border: 10px solid red;*/
       }
 
-  /*    ul.skill li:hover h2.ba{
-        background: url(images/magglassrotatewhite.svg) center no-repeat;
-          -webkit-transform: scale(1.2); 
+ul.circle li:hover h3{
+  padding:10px;
+}
+      .content{
+        margin:0 auto;
+        padding:20px;
+      }
 
-       }
-
-*/
-
-/*      ul.skill li:hover h3.ba{
-        
-
-      }*/
-
-
-      .skill h2{
+      .circle h2{
        border-radius: 50%;
        width: 80px;
        height:80px;
@@ -142,16 +151,18 @@ html[xmlns] .clearfix {
       
       }
 
-      .skill h3{
-        padding: 40px 20px;
-        font-size: 20px;
+      .circle h3{
+        padding: 20px 20px;
+        font-size: 12px;
         font-weight: bold;
         text-align: center;
         color:rgb(132, 214, 195);
+         -webkit-transition: all .5s ease-in-out;
+
         }
 
-      .skill h2{   
-    /*   background: url(images/magglasswhite.svg) center no-repeat;*/
+      .circle h2{   
+   
        top:10px;
        left:40px;
       }
@@ -159,62 +170,7 @@ html[xmlns] .clearfix {
     
    
 
-      .card{
-        width:40%;
  
-    /*     background:rgb(132, 214, 195);*/
-        border-radius: 3px;
-        padding:20px;
-        margin:20px;
-        float:left;
-        color:rgb(132, 214, 195);
-
-      }
-
-      .card .top{
-        background: url(images/videocam.svg) center no-repeat;
-        background-size: cover;
-        min-height: 400px;
-/*        margin:-20px;*/
-        position: relative;
-      }
-
-      .card .middle{
-        margin-top:-40px;
-      } 
-
-      h2.problem{
-        font-size: 48px;
-        line-height: 1.2em;
-        color:rgb(132, 214, 195);
-        text-shadow: 2px 2px rgb(227, 248, 242);
-        width: 40%;
-        float:left;
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-      }
-
-      .uppercase{
-        text-transform: uppercase;
-      }
-
-
-      span.role{
-        position: absolute;
-        color: #000;
-        bottom: 40px;
-        left: -10px;
-        background:rgb(132, 214, 195);
-        padding: 0px 33px 0px 33px;
-        text-transform: uppercase;
-        height: 20px;
-        font-size: 10px;
-      }
-
-      .fast{
-        color:rgb(132, 214, 195);
-        font-size: 72px;
-      }
 
 
       /* Then we use media queries for targeting other resolutions */
