@@ -83,11 +83,19 @@ html[xmlns] .clearfix {
         min-height: 400px;
       }
 
+      .alt{
+        background:rgb(198, 238, 226);
+      }
+
       .content h2{
         text-align: center;
         padding:100px;
         line-height: 1.2em;
       }
+
+
+
+
       
       .centered{
         margin:0 auto;
