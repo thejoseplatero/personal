@@ -35,6 +35,7 @@ html[xmlns] .clearfix {
         line-height: 1.2em;
         color:white;
 
+
       }
 
       h1{
@@ -78,7 +79,6 @@ html[xmlns] .clearfix {
 
       .content{
         background:rgb(227, 248, 242);
-        color:rgb(227, 248, 242);
         width:100%;
         min-height: 400px;
       }
@@ -87,10 +87,74 @@ html[xmlns] .clearfix {
         background:rgb(198, 238, 226);
       }
 
-      .content h2{
+      .cover{
+        background: url(images/lovejose.jpg) no-repeat center;
+        background-size:cover;
+        background-position: bottom;
         text-align: center;
+        position: relative;
+
+        
+      }
+
+   
+
+      .content h2{
+        text-align: left;
         padding:100px;
-        line-height: 1.2em;
+        text-shadow: 1px 1px 2px rgb(227, 248, 242);
+        color:#69d9b9;
+        line-height: 1.2em; 
+
+        
+      }
+
+      .cover h2{
+        color:white;
+        position: absolute;
+        padding:0;
+        bottom:0;
+    /*    text-shadow: 1px 1px 2px white;*/
+      }
+
+      .sectionIntro{
+      /*  display: block;*/
+        color:white;
+      /*  border: solid 10px white;*/
+       
+     
+
+   
+      /*  position: relative;
+        bottom: 100px;*/
+
+      }
+
+      .sectionIntro h2{
+        font-size:72px;
+        margin:0px auto;
+        padding:0 0 0 10px;
+        border-left: 1px dotted white;
+      }
+
+      .sectionIntro h3{
+        float:left;
+
+      }
+      .content.alt h2{
+           text-shadow:1px 1px 2px rgb(198, 238, 226);
+      }
+
+      .content img{
+        width:400px;
+        margin:0; 
+        padding: 20px;
+        float:left;
+
+      }
+
+      img.cam{
+        
       }
 
 
@@ -113,6 +177,7 @@ html[xmlns] .clearfix {
         top:0px;
         width:100%;
         text-align: center;
+        z-index: 99;
 
 
 
@@ -129,14 +194,15 @@ html[xmlns] .clearfix {
         vertical-align: top;
         width:100px;
         height:100px;
-         -webkit-transition: all .5s ease-in-out;
-
+        -webkit-transition: all .5s ease-in-out;
+        text-shadow: 0px 0px px rgb(132, 213, 214);
       }
 
       ul.circle li:hover{
         overflow:hidden;
         z-index:1;
-        -webkit-transform: scale(1.1); 
+        translateZ(0); /* for gpu on phones */
+        -webkit-transform: scale(1.1) rotate(360deg); 
         box-shadow: 0px  0px 50px white;
         border: 20px dotted rgb(132, 213, 214);
        /* border: 10px solid red;*/
@@ -175,6 +241,13 @@ ul.circle li:hover h3{
        left:40px;
       }
 
+
+.footer{
+  background-color:#aaa;
+  min-height:200px;
+  margin: 0 auto;
+  text-align:center;
+}
     
    
 
