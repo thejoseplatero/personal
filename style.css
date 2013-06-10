@@ -86,18 +86,37 @@ html[xmlns] .clearfix {
       .alt{
         background:rgb(198, 238, 226);
       }
-
       .cover{
+       
+        text-align: center;
+        position: relative;   
+      }
+      .coverBapm{
         background: url(images/lovejose.jpg) no-repeat center;
         background-size:cover;
-        background-position: bottom;
-        text-align: center;
-        position: relative;
-
-        
+         background-position: bottom;
+       
       }
 
-   
+      .coverWeb{
+         background: url(images/zakiandian.jpg) no-repeat center;
+         background-size:cover;
+        /*background-position: top;*/
+      }
+      
+      .coverMedia{
+         background: url(images/zakiandian.jpg) no-repeat center;
+         background-size:cover;
+        /*background-position: top;*/
+      }
+      
+       .coverLife{
+         background: url(images/lovejose.jpg) no-repeat center;
+         background-size:cover;
+         background-position: bottom;
+         text-align: center;
+         position: relative;   
+       }
 
       .content h2{
         text-align: left;
