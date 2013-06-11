@@ -66,31 +66,26 @@ html[xmlns] .clearfix {
       .wrapper{
         width:100%;
         margin:0 auto;
-   /*     background:rgb(198, 238, 226);*/
-         background-image:url(images/green_dust_scratch.png);
+        background-image:url(images/green_dust_scratch.png);
       }
 
       .header{
         min-height: 200px;
         width:100%;
-       
-
       }
 
       .content{
-        background:rgb(227, 248, 242);
+        background:rgb(198, 238, 226);
         width:100%;
         min-height: 400px;
       }
 
-      .alt{
-        background:rgb(198, 238, 226);
-      }
+   
       .cover{
-       
         text-align: center;
         position: relative;   
       }
+
       .coverBapm{
         background: url(images/lovejose.jpg) no-repeat center;
         background-size:cover;
@@ -129,35 +124,42 @@ html[xmlns] .clearfix {
       }
 
       .cover h2{
-        color:white;
+     /*   color:black;*/
         position: absolute;
-        padding:0;
-        bottom:0;
-    /*    text-shadow: 1px 1px 2px white;*/
+        bottom:200px;
+        left:0;
+        background:rgba(255, 255, 255, 1);
+        text-align: center;
+        width:25%;
+        margin:0 auto;
+        padding:20px;
+        margin-left:-10px;
+        border-radius: 3px;
+      
+
+      }
+      .column{
+        width:20%;
+        float:left;
+     /*   z-index:20;*/
+  /*      position: absolute;*/
       }
 
-      .sectionIntro{
-      /*  display: block;*/
+      .headline{
         color:white;
-      /*  border: solid 10px white;*/
-       
-     
-
-   
-      /*  position: relative;
-        bottom: 100px;*/
 
       }
 
-      .sectionIntro h2{
+      .headline h2{
         font-size:72px;
         margin:0px auto;
         padding:0 0 0 10px;
         border-left: 1px dotted white;
+        text-transform: uppercase;
       }
 
-      .sectionIntro h3{
-        float:left;
+      .description h2{
+        color:white;
 
       }
       .content.alt h2{
@@ -172,14 +174,8 @@ html[xmlns] .clearfix {
 
       }
 
-      img.cam{
-        
-      }
+    
 
-
-
-
-      
       .centered{
         margin:0 auto;
       }
@@ -190,7 +186,7 @@ html[xmlns] .clearfix {
         width:1020px;
       }
 
-      ul.circle{
+      ul.nav{
         margin: -50px auto;
         position: relative;
         top:0px;
@@ -202,9 +198,9 @@ html[xmlns] .clearfix {
 
       }
   
-      ul.circle li{
+      ul.nav li{
         border:10px solid rgb(132, 213, 214);
-         background:rgb(198, 238, 226);
+        background:rgb(198, 238, 226);
         border-radius: 50%;
         box-shadow: 0px  0px 50px white;
         margin-right: 2px;
@@ -217,7 +213,7 @@ html[xmlns] .clearfix {
         text-shadow: 0px 0px px rgb(132, 213, 214);
       }
 
-      ul.circle li:hover{
+      ul.nav li:hover{
         overflow:hidden;
         z-index:1;
         translateZ(0); /* for gpu on phones */
@@ -227,7 +223,7 @@ html[xmlns] .clearfix {
        /* border: 10px solid red;*/
       }
 
-ul.circle li:hover h3{
+ul.nav li:hover h3{
   padding:10px;
 }
       .content{
@@ -235,7 +231,7 @@ ul.circle li:hover h3{
         padding:20px;
       }
 
-      .circle h2{
+      .nav h2{
        border-radius: 50%;
        width: 80px;
        height:80px;
@@ -244,7 +240,7 @@ ul.circle li:hover h3{
       
       }
 
-      .circle h3{
+      .nav h3{
         padding: 20px 20px;
         font-size: 12px;
         font-weight: bold;
@@ -254,7 +250,7 @@ ul.circle li:hover h3{
 
         }
 
-      .circle h2{   
+      .nav h2{   
    
        top:10px;
        left:40px;
