@@ -87,9 +87,9 @@ html[xmlns] .clearfix {
       }
 
       .coverBapm{
-        background: url(images/lovejose.jpg) no-repeat center;
+        background: url(images/planning.jpg) no-repeat center;
         background-size:cover;
-         background-position: bottom;
+         background-position: top;
        
       }
 
@@ -127,9 +127,9 @@ html[xmlns] .clearfix {
         left:0;
         background:rgba(255, 255, 255, 1);
         text-align: center;
-        width:25%;
+        width:40%;
         margin:0 auto;
-        padding:4%;
+        padding:20px;
         margin-left:-2%;
         border-radius: 3px;
       
