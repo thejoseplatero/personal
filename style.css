@@ -57,11 +57,7 @@ html[xmlns] .clearfix {
         margin:0;
       }
 
-      .number{
-        color:red;
-      }
-
-
+    
 
       .wrapper{
         width:100%;
@@ -146,17 +142,24 @@ html[xmlns] .clearfix {
         float:left;
         margin-left:2%;
       }
+
+
+      .description h2{
+        color:black;
+        
+      }
     
       .resultColumn h2{
         padding:0;
         font-size: 48px; 
-        color:white;
+        color:black;
 
 
       }
 
       .resultColumn p{
         margin-top:-40px;
+        color:black;
       }
 
       .headline{
@@ -168,14 +171,9 @@ html[xmlns] .clearfix {
         font-size:72px;
         margin:0px auto;
         padding:0 0 0 10px;
-        border-left: 1px dotted white;
         text-transform: uppercase;
       }
 
-      .description h2{
-        color:white;
-        
-      }
    
       .content{
         margin:0 auto;
@@ -199,10 +197,10 @@ html[xmlns] .clearfix {
         box-shadow: 0 0 10px black;
         padding:0;
        }
-
-       span.inTraining{
+  
+       span.subHeadline{
         font-size: 16px;
-        color:black;
+        color:white;
        }
 
     
