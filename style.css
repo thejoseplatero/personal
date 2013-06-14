@@ -41,7 +41,7 @@ html[xmlns] .clearfix {
       h1{
             margin:0 auto;
             font-size:72px;
-            padding:100px;
+            padding:4%;
             text-align: center;
       }
 
@@ -115,7 +115,7 @@ html[xmlns] .clearfix {
 
       .content h2{
         text-align: left;
-        padding:100px;
+        padding:4%;
         text-shadow: 1px 1px 2px rgb(227, 248, 242);
         color:#69d9b9;
         line-height: 1.2em; 
@@ -124,25 +124,43 @@ html[xmlns] .clearfix {
       }
 
       .cover h2{
-     /*   color:black;*/
         position: absolute;
-        bottom:200px;
+        bottom:50%;
         left:0;
         background:rgba(255, 255, 255, 1);
         text-align: center;
         width:25%;
         margin:0 auto;
-        padding:20px;
-        margin-left:-10px;
+        padding:4%;
+        margin-left:-2%;
         border-radius: 3px;
       
 
       }
-      .column{
-        width:20%;
+        .resultContainer{
+        width:50%;
         float:left;
-     /*   z-index:20;*/
+        margin-top:-8%;
+      }
+
+      .resultColumn{
+        width:30%;
+        float:left;
+        margin-left:2%;
+
+             /*   z-index:20;*/
   /*      position: absolute;*/
+      }
+    
+      .resultColumn h2{
+        padding:0;
+        font-size: 48px; 
+        color:white;
+
+      }
+
+      .resultColumn p{
+        margin-top:-40px;
       }
 
       .headline{
@@ -160,14 +178,16 @@ html[xmlns] .clearfix {
 
       .description h2{
         color:white;
+      }
+   
+      .content{
+        margin:0 auto;
+        padding:20px;
+      }
 
-      }
-      .content.alt h2{
-           text-shadow:1px 1px 2px rgb(198, 238, 226);
-      }
 
       .content img{
-        width:400px;
+        width:40%;
         margin:0; 
         padding: 20px;
         float:left;
@@ -175,16 +195,6 @@ html[xmlns] .clearfix {
       }
 
     
-
-      .centered{
-        margin:0 auto;
-      }
-
-      .content ul{
-        margin: 40px auto;
-        padding: 0;
-        width:1020px;
-      }
 
       ul.nav{
         margin: -50px auto;
@@ -223,13 +233,10 @@ html[xmlns] .clearfix {
        /* border: 10px solid red;*/
       }
 
-ul.nav li:hover h3{
-  padding:10px;
-}
-      .content{
-        margin:0 auto;
-        padding:20px;
+      ul.nav li:hover h3{
+        padding:10px;
       }
+         
 
       .nav h2{
        border-radius: 50%;
@@ -257,12 +264,12 @@ ul.nav li:hover h3{
       }
 
 
-.footer{
-  background-color:#aaa;
-  min-height:200px;
-  margin: 0 auto;
-  text-align:center;
-}
+      .footer{
+        background-color:#aaa;
+        min-height:200px;
+        margin: 0 auto;
+        text-align:center;
+      }
     
    
 
