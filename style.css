@@ -45,9 +45,6 @@ html[xmlns] .clearfix {
             text-align: center;
       }
 
-      h2{
-        color:white;
-      }
 
       li{
         list-style: none;
@@ -109,11 +106,18 @@ html[xmlns] .clearfix {
        }
 
       .content h2{
-        text-align: left;
-        padding:30px 0 40px 10px;
+        /*text-align: left;*/
+       /* padding:30px 0 40px 10px;*/
         text-shadow: 1px 1px 2px rgb(227, 248, 242);
         color:#69d9b9;
         line-height: 1.2em; 
+      }
+
+      .content .video{
+       /* border: 20px solid white;*/
+       margin:2%;
+       float:left;
+        box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.5);
       }
 
    
@@ -129,37 +133,49 @@ html[xmlns] .clearfix {
         margin-left:-2%;
         border-radius: 3px;
       
+ 
+      }
+
+        .description h2{
+         color:black;
+          float:left;
+         /* margin-bottom:1%;*/
 
       }
+
+      .description p{
+      float:left:;
+      }
+    
         .resultContainer{
-        width:50%;
+        width:40%;
         float:left;
-        margin-top:-8%;
+        border: 1px solid black;
       }
 
       .resultColumn{
         width:30%;
         float:left;
-        margin-left:2%;
+      
       }
 
 
-      .description h2{
-        color:black;
-        
-      }
     
       .resultColumn h2{
-        padding:0;
+        padding-top:0;
         font-size: 48px; 
         color:black;
+        text-align: center;
+        margin:0 0 2px 0;
+        float:none;
 
 
       }
 
       .resultColumn p{
-        margin-top:-40px;
+      /*  margin-top:-40px;*/
         color:black;
+        text-align: center; 
       }
 
       .headline{
@@ -174,11 +190,14 @@ html[xmlns] .clearfix {
         text-transform: uppercase;
       }
 
+      .uppercase{
+        text-transform: uppercase;
+      }
+
    
       .content{
         margin:0 auto;
         padding:20px;
-
       }
 
 
@@ -187,7 +206,6 @@ html[xmlns] .clearfix {
         margin:0; 
         padding: 20px;
         float:left;
-
       }
 
       img.webApplication{
@@ -196,6 +214,7 @@ html[xmlns] .clearfix {
         border-radius: 3px;
         box-shadow: 0 0 10px black;
         padding:0;
+
        }
   
        span.subHeadline{
@@ -265,7 +284,6 @@ html[xmlns] .clearfix {
         }
 
       .nav h2{   
-   
        top:10px;
        left:40px;
       }
@@ -274,7 +292,7 @@ html[xmlns] .clearfix {
       .footer{
         background-color:#aaa;
         min-height:200px;
-        margin: 0 auto;
+       /* margin: 0 auto;*/
         text-align:center;
       }
     
