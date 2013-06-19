@@ -49,11 +49,11 @@ html[xmlns] .clearfix {
       li{
         list-style: none;
       }
-      p{
+/*      p{
       
         margin:0;
       }
-
+*/
     
 
       .wrapper{
@@ -139,18 +139,23 @@ html[xmlns] .clearfix {
         .description h2{
          color:black;
           float:left;
-         /* margin-bottom:1%;*/
+        
 
       }
 
-      .description p{
-      float:left:;
+  
+
+      h3.summary {
+        color:white;
+        margin:0;
+        float:left;
+        /*display:block*/;
       }
     
         .resultContainer{
-        width:40%;
+        width:50%;
         float:left;
-        border: 1px solid black;
+      
       }
 
       .resultColumn{
@@ -322,4 +327,22 @@ html[xmlns] .clearfix {
         body {
           background:yellow;
         }
+
+        
+      .nav{
+        width:100%;
+        display:none;
+      }
+
+      .nav li a{
+        text-align: center;
+        width:100%;
+        display:block;
+       
+      }
+
+      a.navToggle{
+        display:block;
+      }
+
       }
