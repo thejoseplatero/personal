@@ -12,52 +12,17 @@
 <body>
 	<div class="wrapper">
 	 <div class="header">
-		<h1>Jose Platero, I do</h1>
+		<h1>Jose Platero, I</h1>
 	 </div>
 
 	<!--  navigation -->
-	<a href="#" class="navToggle">&#9776; Menu</a>  <!-- responsive menu phone -->
+<!-- 	<a href="#" class="navToggle">&#9776; Menu</a>   responsive menu phone --> 
 	<ul class = "nav">
-		<li>
-			<h2>
-				<!-- image of mag glass -->
-			</h2>
-
-			<h3>
-			 BA/PM
-		 </h3>
-	 </li>
-
-	<li>
-		<h2>
-			<!-- image of mag glass -->
-		</h2>
-		<h3>
-		 Web
-		</h3>
-	</li>
- 
-	<li>
-	 <h2>
-		<!-- image of mag glass -->
-	 </h2>
-
-	 <h3>
-		Media
-	 </h3>
-	</li>
-	
-	<li>
-	<h2>
-		<!-- image of mag glass -->
-	</h2>
-
-	<h3>
-	 Life
- </h3>
-</li>
-</li>
-</ul>
+		<li><a href="#bapm">BA/PM</a></li>
+		<li><a href="#web">Web</a></li>
+ 		<li><a href="#media">Media</a></li>
+		<li><a href="">Life</a></li>	
+	</ul>
 
 
 <!-- Business Analyst Project Manager Section  -->
@@ -74,21 +39,16 @@
 		<h2>Project Manager</h2>
 	</div>
 	 
-
 	<div class="description clearfix">
-
-
-
 		<img class="cam" src="images/videocam-blue.svg" alt="image of video camera"/> 
 		<h2>
 			A Content Delivery Portal for Global News.
 		</h2>
-	
-		<h3 class ='summary'>Summary....</h3>
+		<h3>Summary....</h3>
 	
 
 
-			<!-- results -->
+	<!-- results -->
 		<div class="resultContainer clearfix">
 			<div class="resultColumn">
 				<h2>12</h2>
@@ -112,35 +72,27 @@
 
 <!--   Web Development Section -->
 
-	 
-
 <div class="content cover coverWeb" id="web">
 	<h2>
 	 Ideate, Develop, Deliver
- </h2>
-
+ 	</h2>
 </div> 
+
 <div class="content">
- <div class = "headline">
-	<h2>Web Developer<span class='subHeadline'>in training</span></h2>
+	<div class = "headline">
+		<h2>Web Developer
+			<span class='subHeadline'>in training</span>
+		</h2>
 	</div>
-<div class="description clearfix">
+	<div class="description clearfix">
+		<img class="webApplication"src="images/nearzbuy.png"alt="image of video camera"/> 
+		<h2>
+	 		Location Based Selling Application
+		</h2>
 
+		<h3>Summary....</h3>
 
-
-	
-	 <img class="webApplication"src="images/nearzbuy.png" alt="image of video camera"/> 
-		
-	
-	 <h2>
-	 	Location Based Selling Application
-	 	
-	 </h2>
-
-	<h3 class ='summary'>Summary....</h3>
-
-
-			<!-- results -->
+<!-- results -->
 		<div class="resultContainer clearfix">
 			<div class="resultColumn">
 				<h2>3</h2>
@@ -159,51 +111,50 @@
 		</div>
 	</div> 
  </div>
-</div>    
+
 
 <!-- Media Section -->
 
-<div class="content cover coverMedia" id="web">
+<div class="content cover coverMedia" id="media">
 	<h2>
 	 Think, Strategize, Create
- </h2>
+ 	</h2>
 </div>
 
 <div class="content">
- <div class = "headline ">
-	<h2>SOMETHING</h2>
- </div>
+ 	<div class = "headline ">
+		<h2>SOMETHING</h2>
+ 	</div>
 
- <div class="description clearfix">
-
-
- 	<iframe  class="video" width="480" height="360" src=" http://www.youtube.com/embed/vmKrOOw_Ik8" frameborder="0" allowfullscreen>
-	</iframe>
-
- 		<h2 >TGP Event Series </h2>
-
- 		<h3 class ='summary'>Summary....</h3>
- 
-
-	<!-- results -->
-	<div class="resultContainer clearfix">
-
-		<div class="resultColumn">
-			<h2>5</h2>
-			<p> Amazing Showcases </p>
+ 	<div class="description clearfix">
+		
+		<div class="video">
+		 	<iframe width="480" height="360" src=" http://www.youtube.com/embed/vmKrOOw_Ik8" frameborder="0" allowfullscreen>
+			</iframe>
 		</div>
 
-		<div class="resultColumn">
-			<h2>30</h2>
-			<p>Artist Performances</p>
-		</div>
+	 	<h2 >TGP Event Series </h2>
 
-		<div class="resultColumn">
-			<h2>1</h2>
-			<p>Experience</p>
-		</div>
+	 	<h3>Summary....</h3>
+	 
 
-	</div> <!--close result Container-->
+		<!-- results -->
+		<div class="resultContainer clearfix">
+			<div class="resultColumn">
+				<h2>5</h2>
+				<p> Amazing Showcases </p>
+			</div>
+
+			<div class="resultColumn">
+				<h2>30</h2>
+				<p>Artist Performances</p>
+			</div>
+
+			<div class="resultColumn">
+				<h2>1</h2>
+				<p>Experience</p>
+			</div>
+		</div> <!--close result Container-->
 	</div> <!--close description--> 
  </div> <!--close content-->
 
@@ -244,20 +195,27 @@
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
 </script>
+<script src="js/jquery.fitvids.js"></script>
 
 <script>
   // $(function(){});//document ready
    $(function(){
+
+   	$(".video").fitVids();
+
    // 1. select the link
    // 2. attach teh click event
    // 3. toggle the nav on click
 
-      $('a.navToggle').click(function(){
-        $('ul.nav').slideToggle(100);
-      });; 
+      // $('a.navToggle').click(function(){
+      //   $('ul.nav').slideToggle(100);
+      // });; 
 
 
    }); 
 </script>
+
+ <script type="text/javascript" src="https://raw.github.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.min.js"></script>
+  <script> $(function() {$('a[href^="#"]').smoothScroll({offset:-100}); }); </script> 
 </body>
 </html>

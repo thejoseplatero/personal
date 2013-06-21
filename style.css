@@ -49,22 +49,18 @@ html[xmlns] .clearfix {
       li{
         list-style: none;
       }
-/*      p{
-      
-        margin:0;
-      }
-*/
-    
+
 
       .wrapper{
         width:100%;
         margin:0 auto;
-        background-image:url(images/green_dust_scratch.png);
+        
       }
 
       .header{
-        min-height: 200px;
+        min-height: 160px;
         width:100%;
+        background-image:url(images/green_dust_scratch.png);
       }
 
       .content{
@@ -89,7 +85,7 @@ html[xmlns] .clearfix {
       .coverWeb{
          background: url(images/webdev.png) no-repeat center;
          background-size:cover;
-        background-position: top;
+         background-position: top;
       }
       
       .coverMedia{
@@ -106,21 +102,19 @@ html[xmlns] .clearfix {
        }
 
       .content h2{
-        /*text-align: left;*/
-       /* padding:30px 0 40px 10px;*/
         text-shadow: 1px 1px 2px rgb(227, 248, 242);
         color:#69d9b9;
         line-height: 1.2em; 
-      }
+      } 
 
-      .content .video{
-       /* border: 20px solid white;*/
+      .video{
+        border: 20px solid white;
+       width:40%;
        margin:2%;
        float:left;
         box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.5);
       }
 
-   
       .cover h2{
         position: absolute;
         bottom:50%;
@@ -133,25 +127,24 @@ html[xmlns] .clearfix {
         margin-left:-2%;
         border-radius: 3px;
       
- 
       }
 
-        .description h2{
+
+      .description {
+        width: 100%;
+      }
+
+      
+      .description h2{
          color:black;
-          float:left;
-        
-
       }
-
-  
-
-      h3.summary {
+      
+      .description h3{
         color:white;
         margin:0;
-        float:left;
-        /*display:block*/;
+      
       }
-    
+
         .resultContainer{
         width:50%;
         float:left;
@@ -172,13 +165,10 @@ html[xmlns] .clearfix {
         color:black;
         text-align: center;
         margin:0 0 2px 0;
-        float:none;
-
-
+      
       }
 
       .resultColumn p{
-      /*  margin-top:-40px;*/
         color:black;
         text-align: center; 
       }
@@ -239,66 +229,52 @@ html[xmlns] .clearfix {
 
       }
   
-      ul.nav li{
-        border:10px solid rgb(132, 213, 214);
-        background:rgb(198, 238, 226);
-        border-radius: 50%;
-        box-shadow: 0px  0px 50px white;
-        margin-right: 2px;
-        display: inline-block;
-        position: relative;
-        vertical-align: top;
-        width:100px;
-        height:100px;
-        -webkit-transition: all .5s ease-in-out;
-        text-shadow: 0px 0px px rgb(132, 213, 214);
-      }
-
-      ul.nav li:hover{
-        overflow:hidden;
-        z-index:1;
-        translateZ(0); /* for gpu on phones */
-        -webkit-transform: scale(1.1) rotate(360deg); 
-        box-shadow: 0px  0px 50px white;
-        border: 20px dotted rgb(132, 213, 214);
-       /* border: 10px solid red;*/
-      }
-
-      ul.nav li:hover h3{
-        padding:10px;
-      }
-         
-
-      .nav h2{
-       border-radius: 50%;
-       width: 80px;
-       height:80px;
-       padding:0px;
-       position: absolute;
-      
-      }
-
-      .nav h3{
-        padding: 20px 20px;
-        font-size: 12px;
-        font-weight: bold;
-        text-align: center;
-        color:rgb(132, 214, 195);
-         -webkit-transition: all .5s ease-in-out;
-
+        ul.nav li{
+          border:10px solid rgb(132, 213, 214);
+          background:rgb(198, 238, 226);
+          border-radius: 50%;
+          box-shadow: 0px  0px 50px white;
+          margin-right: 2px;
+          display: inline-block;
+          position: relative;
+          vertical-align: top;
+          width:100px;
+          height:100px;
+          -webkit-transition: all .5s ease-in-out;
+          text-shadow: 0px 0px px rgb(132, 213, 214);
         }
 
-      .nav h2{   
-       top:10px;
-       left:40px;
-      }
+          ul.nav li:hover{
+            overflow:hidden;
+            z-index:1;
+            translateZ(0); /* for gpu on phones */
+            -webkit-transform: scale(1.1) rotate(360deg); 
+            box-shadow: 0px  0px 50px white;
+            border: 20px dotted rgb(132, 213, 214);
+          }
+
+       ul.nav li a{
+        font-size: 14px;
+        text-decoration: none;
+        color:white;
+        text-shadow: 0px 0px 10px rgb(132, 213, 214);
+        text-align: center;
+        position: relative;
+          top:25px;
+       }  
+
+        ul.nav li:hover a{
+          padding:5px;
+
+        }
+         
 
 
       .footer{
         background-color:#aaa;
         min-height:200px;
-       /* margin: 0 auto;*/
         text-align:center;
+        padding-top:5%;
       }
     
    
@@ -311,7 +287,7 @@ html[xmlns] .clearfix {
       /* Portrait tablet and small desktops */
       @media (max-width: 940px) {
         body {
-          background:green;
+          background:green; 
         }
       }
        
@@ -328,21 +304,82 @@ html[xmlns] .clearfix {
           background:yellow;
         }
 
-        
-      .nav{
-        width:100%;
-        display:none;
-      }
-
-      .nav li a{
-        text-align: center;
-        width:100%;
-        display:block;
+        h1{
+          font-size: 26px;
+        }
+  
+        .header{
+          min-height:100px;
+        }
+        ul.nav{
+          width:100%;
+          padding: 0;
+        }
+     
+        ul.nav li{
+          border:2px solid rgb(132, 213, 214);
+          background:rgb(198, 238, 226);
+          border-radius: 0;
+          float:left;
+          margin:0;
+    
+          width:25%;
+          height:40px;
+        -webkit-transition: none;
        
-      }
+        }
 
-      a.navToggle{
-        display:block;
-      }
+        ul.nav li a{
+          text-align: center;
+          width:100%;
+          display:block;
+          position: relative;
+          top:10px;
+        }
+        ul.nav li:hover{
+          overflow:hidden;
+          z-index:1;
+          translateZ(0); /* for gpu on phones */
+          -webkit-transform: none;
+          box-shadow: 0px  0px 50px white;
+          border: 2px solid rgb(132, 213, 214);
+        }
 
+
+        .headline h2{
+          font-size:24px;
+        }
+
+        .description h2{
+          font-size:14px;
+        }
+
+        .description h3{
+          font-size:12px;
+        }
+
+          .resultContainer{
+          width:100%;
+        
+        }
+
+        .resultColumn{
+          width:30%;
+          float:left;
+        }
+
+        .resultColumn h2{
+          font-size: 24px;
+        }
+
+        .description img{
+          width:100%;
+        }
+
+        .video{
+          width:100%;
+        }
+
+
+   
       }
